@@ -1,0 +1,159 @@
+.simple-slideout-menu-panel  {
+   position:fixed;
+   top:0;
+   background:#eee;
+   max-width:330px;
+   width:90%;
+   z-index:999999999;
+   height:100vh;
+   padding:40px 25px;
+   overflow-y:auto;
+   -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.5);
+}
+
+.simple-slideout-menu-panel.left {
+  left:-500px;
+}
+
+.simple-slideout-menu-panel.right {
+  right:-500px;
+}
+
+.simple-slideout-menu-panel .simple-slideout-menu-close {
+    position: absolute;
+    top:15px;
+    text-decoration:none;
+    color:#000;
+    margin:0;
+    padding:0;
+    
+}
+
+.simple-slideout-menu-panel .simple-slideout-menu-close:hover{
+  color:#bc0909;
+}
+
+.simple-slideout-menu-panel .simple-slideout-menu-close .dashicons {
+    font-size: 30px;
+    width:30px;
+    height:30px;
+    line-height: 30px;
+}
+
+.simple-slideout-menu-panel.left .simple-slideout-menu-close {
+    right:20px;
+}
+
+.simple-slideout-menu-panel.right .simple-slideout-menu-close {
+    left:20px;
+}
+
+.simple-slideout-menu-panel > div {
+    width:100%;
+    height:100%;
+}
+
+.simple-slideout-menu-panel.open.left {
+    left:0;
+}
+
+.simple-slideout-menu-panel.open.right {
+    right:0;
+}
+
+a.active[data-trigger="simple-slideout"] .dashicons-menu:before {
+    content: "\f335";
+}
+
+.simple-slideout-menu-panel ul.slideout-menu {
+  display: block;
+  padding:0;
+  padding-left:10px;
+  padding-top:10px;
+  margin:0;
+}
+
+.simple-slideout-menu-panel ul.slideout-menu li {
+  display:block;
+  width:100%;
+  margin:0;
+  padding: 0;
+}
+
+.simple-slideout-menu-panel ul.slideout-menu li.menu-item-has-children {
+  position: relative;
+}
+
+.simple-slideout-menu-panel ul.slideout-menu li.menu-item-has-children > a:before {
+  content:'+';
+  position: absolute;
+  right:0;
+  top:0;
+  font-size: 1.2em;
+}
+
+.simple-slideout-menu-panel ul.slideout-menu li.menu-item-has-children.open > a:before {
+  content:'-';
+}
+
+.simple-slideout-menu-panel ul.slideout-menu li.menu-item-has-children button {
+  background: none;
+  padding:0;
+  color:#000;
+}
+
+.simple-slideout-menu-panel ul.slideout-menu li.menu-item-has-children button:hover {
+  border:none;
+}
+
+.simple-slideout-menu-panel ul.slideout-menu li.menu-item-has-children .sub-menu-toggle {
+  position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.simple-slideout-menu-panel ul.slideout-menu li.menu-item-has-children .sub-menu-toggle .icon-minus {
+  display:none;
+}
+
+.simple-slideout-menu-panel ul.slideout-menu li.menu-item-has-children > ul.sub-menu {
+  display:none;
+  margin:0;
+  padding-left: 5px;
+}
+
+.simple-slideout-menu-panel ul.slideout-menu li.menu-item-has-children.open > ul.sub-menu {
+  display: block;
+}
+
+.simple-slideout-menu-panel ul.slideout-menu li,
+.simple-slideout-menu-panel ul.slideout-menu {
+    list:none;
+    line-height: 2em;
+}
+
+
+
+.simple-slideout-menu-panel ul.slideout-menu li:marker {
+  display: none;
+}
+
+.simple-slideout-menu-panel  ul.slideout-menu  a {
+    text-decoration:none;
+    line-height: 2em;
+    display: block;
+    text-transform: uppercase;
+    color:#868080;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.simple-slideout-menu-panel  ul.slideout-menu  a:hover {
+  color:#000;
+}
